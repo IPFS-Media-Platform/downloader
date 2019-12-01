@@ -1,9 +1,23 @@
 // Components
 import React from "react"
-import Downloader from './components/downloader'
+import VaultTable from './components/vault-table'
+import Vault from './components/vault'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 const App = () => (
-  <Downloader />
+  <Router>
+    <Switch>
+      <Route exact path="/" component={VaultTable} />
+      <Route path="/vault">
+        <Vault />
+      </Route>
+    </Switch>
+  </Router>
 )
 
 export default App
