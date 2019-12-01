@@ -49,7 +49,7 @@ const VaultTable = () => {
                 {row.vaultName}
               </TableCell>
               <TableCell>
-                <Link to={`/vault/${row.ipfsHash}`}>{row.ipfsHash}</Link>  
+                <a href={`https://gateway.ipfs.io/ipfs/${row.ipfsHash}`}>{row.ipfsHash}</a>  
               </TableCell>
             </TableRow>
           ))}

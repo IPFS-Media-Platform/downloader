@@ -1,17 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom';
 
 // Styling
 import './index.css'
 
-import App from './app'
+import VaultTable from './components/vault-table'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>, 
+  <VaultTable />, 
   document.getElementById('root')
 )
 
