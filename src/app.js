@@ -13,9 +13,7 @@ const App = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={VaultTable} />
-      <Route path="/vault">
-        <Vault />
-      </Route>
+      <Route path="/vault/:address" render={(props) => <Vault {...props} />}/> 
     </Switch>
   </Router>
 )
