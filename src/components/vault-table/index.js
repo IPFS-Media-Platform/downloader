@@ -23,11 +23,11 @@ function createData(vaultName, ipfsHash) {
 }
 
 const rows = [
-  createData('Frozen yoghurt', 'QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
-  createData('Ice cream sandwich','QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
-  createData('Eclair', 'QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
-  createData('Cupcake', 'QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
-  createData('Gingerbread', 'QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
+  createData('CatA', 'QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
+  createData('CatB','QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
+  createData('CatC', 'QmW2WQi7j6c7UgJTarActp7tDNikE4B2qXtFCfLPdsgaTQ'),
+  createData('LobsterA', 'QmW3FgNGeD46kHEryFUw1ftEUqRw254WkKxYeKaouz7DJA'),
+  createData('LobsterB', 'QmW3FgNGeD46kHEryFUw1ftEUqRw254WkKxYeKaouz7DJA'),
 ]
 
 const VaultTable = () => {
@@ -49,7 +49,7 @@ const VaultTable = () => {
                 {row.vaultName}
               </TableCell>
               <TableCell>
-                <Link to="/vault">{row.ipfsHash}</Link>  
+                <Link to={`/vault/${row.ipfsHash}`}>{row.ipfsHash}</Link>  
               </TableCell>
             </TableRow>
           ))}
